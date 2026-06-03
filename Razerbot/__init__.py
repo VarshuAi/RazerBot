@@ -69,7 +69,10 @@ class LazyClientSession:
 aiohttpsession = LazyClientSession()
 
     
-from config import Development as Config
+try:
+    from config import Development as Config
+except ModuleNotFoundError:
+    from xconfig import Development as Config
 
 TOKEN = Config.TOKEN
 

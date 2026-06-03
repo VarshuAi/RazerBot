@@ -32,18 +32,34 @@ First Step!
 Star ⭐ the repository!!
 It really motivates me to continue this project further
 
-Read [Docs] for Detailed Description and Setup Guide on deploying Bot.
-
 > Click on buttons to expand!
 <details>
 <summary><b>Requirements</b></summary>
 <br>
     
-- [Python3.9](https://www.python.org/downloads/release/python-390/)
+- [Python 3.9 - 3.12](https://www.python.org/downloads/)
 - [Telegram API Key](https://docs.pyrogram.org/intro/setup#api-keys)
 - [Telegram Bot Token](https://t.me/botfather)
 - [MongoDB URI](https://telegra.ph/How-To-get-Mongodb-URI-04-06)
 
+</details>
+
+<details>
+<summary><b>Deploy to Railway (Easiest)</b></summary>
+<br>
+
+To host RazerBot on Railway:
+1. Click **New Project** on Railway.
+2. Select **Deploy from GitHub repo** and choose this repository.
+3. In your project settings, add a **PostgreSQL** database service (Railway automatically links the `DATABASE_URL` environment variable).
+4. Go to the **Variables** tab of your bot service and add the following Environment Variables:
+   * `API_ID` — Your Telegram API ID (integer)
+   * `API_HASH` — Your Telegram API HASH (string)
+   * `TOKEN` — Your Telegram Bot Token from @BotFather
+   * `OWNER_ID` — Your Telegram ID (integer, Owner)
+   * `OWNER_USERNAME` — Your Telegram Username (without @)
+   * `MONGO_DB_URI` — Your MongoDB Connection String
+5. Click **Deploy**. The bot will build and start polling automatically.
 </details>
 
 <details>

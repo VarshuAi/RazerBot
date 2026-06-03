@@ -37,7 +37,7 @@ async def song(hbd):
 	await dun.edit('`Almost there...`')
 	sfn = f"Happy Birthday {fl}!.mp3"
 	sfnl = len(sfn)
-	ffmpeg_extract_subclip(fn, 0, dur, targetname=sfn)
+	ffmpeg_extract_subclip(fn, 0, dur, sfn)
 	await hbd.client.send_file(hbd.chat_id, sfn, thumb=fl, attributes=[DocumentAttributeAudio(title=sfn[:sfnl-4], performer=artist, duration=dur)], reply_to=hbd.reply_to_msg_id)
 	await dun.delete()
 	os.remove(fn)
