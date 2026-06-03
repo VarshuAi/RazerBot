@@ -45,7 +45,43 @@ It really motivates me to continue this project further
 </details>
 
 <details>
-<summary><b>Deploy to Railway (Easiest)</b></summary>
+<summary><b>Deploy to Koyeb (Free - 24/7)</b></summary>
+<br>
+
+Koyeb offers a free tier that allows running one application 24/7.
+1. Sign up on [Koyeb](https://www.koyeb.com/).
+2. Click **Create Service**.
+3. Select **GitHub** and connect your repository.
+4. Set the builder to **Buildpack** (it will auto-detect Python).
+5. In the **Run Command** field, enter:
+   ```console
+   python3 -m Razerbot
+   ```
+6. Add the following **Environment Variables** in the configuration:
+   * `API_ID` — Your Telegram API ID (integer)
+   * `API_HASH` — Your Telegram API HASH (string)
+   * `TOKEN` — Your Telegram Bot Token from @BotFather
+   * `OWNER_ID` — Your Telegram ID (integer, Owner)
+   * `OWNER_USERNAME` — Your Telegram Username (without @)
+   * `MONGO_DB_URI` — Your MongoDB Connection String
+7. Click **Deploy**. The bot will build and start polling 24/7 for free!
+</details>
+
+<details>
+<summary><b>Deploy to Hugging Face Spaces (Free - 24/7)</b></summary>
+<br>
+
+Hugging Face Spaces provides free 24/7 containers:
+1. Create an account on [Hugging Face](https://huggingface.co/).
+2. Click on your profile and select **New Space**.
+3. Set Space SDK to **Docker** and select the **Blank** template.
+4. Clone the space repository locally, or upload the files directly.
+5. In Space settings, go to **Variables and Secrets** and add your environment variables (`TOKEN`, `API_ID`, `API_HASH`, `OWNER_ID`, `OWNER_USERNAME`, `MONGO_DB_URI`).
+6. Push/commit the files. The Space will build the Docker container and start your bot 24/7 for free!
+</details>
+
+<details>
+<summary><b>Deploy to Railway (Paid)</b></summary>
 <br>
 
 To host RazerBot on Railway:
