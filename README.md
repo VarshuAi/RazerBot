@@ -45,26 +45,27 @@ It really motivates me to continue this project further
 </details>
 
 <details>
-<summary><b>Deploy to Koyeb (Free - 24/7)</b></summary>
+<summary><b>Deploy to Render (Free with Keep-Alive)</b></summary>
 <br>
 
-Koyeb offers a free tier that allows running one application 24/7.
-1. Sign up on [Koyeb](https://www.koyeb.com/).
-2. Click **Create Service**.
-3. Select **GitHub** and connect your repository.
-4. Set the builder to **Buildpack** (it will auto-detect Python).
-5. In the **Run Command** field, enter:
+Render offers a free tier for Web Services (no credit card required):
+1. Sign up on [Render](https://render.com/).
+2. Click **New +** and select **Web Service**.
+3. Connect your GitHub repository.
+4. Set **Runtime** to `Python 3`.
+5. Set **Start Command** to:
    ```console
    python3 -m Razerbot
    ```
-6. Add the following **Environment Variables** in the configuration:
+6. Under **Advanced**, add the following environment variables:
    * `API_ID` — Your Telegram API ID (integer)
    * `API_HASH` — Your Telegram API HASH (string)
    * `TOKEN` — Your Telegram Bot Token from @BotFather
    * `OWNER_ID` — Your Telegram ID (integer, Owner)
    * `OWNER_USERNAME` — Your Telegram Username (without @)
    * `MONGO_DB_URI` — Your MongoDB Connection String
-7. Click **Deploy**. The bot will build and start polling 24/7 for free!
+7. Click **Create Web Service**.
+8. **Keep Awake Setup**: Render free tier web services sleep after 15 minutes of inactivity. To keep your bot running 24/7, set up a free HTTP monitor on [UptimeRobot](https://uptimerobot.com/) or [cron-job.org](https://cron-job.org/) to ping your Render service URL (e.g., `https://razerbot-xxxx.onrender.com/`) every 5-10 minutes.
 </details>
 
 <details>
