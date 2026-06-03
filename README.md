@@ -1,134 +1,143 @@
-<p align="center"><img src="https://telegra.ph/file/03dfb5cb80dc9921ed16f.jpg"></p>
+<!-- ========================================================================= -->
+<!--                        RAZERBOT — README                            -->
+<!--       Cyberpunk Premium Theme  |  Animated SVGs  |  Live Badges          -->
+<!-- ========================================================================= -->
 
-<h4 align="center">
-    A Telegram Powerful Group Managment Bot written in Python using Pyrogram and Telethon.
-</h4>
-<p align="center">
-    <a href="https://t.me/Razer312Bot"> Ready-To-Use Bot </a> •
-    <a href="about:blank"> Documentation </a> •
-    <a href="https://t.me/Razer312Updates"> Update Channel </a> •
-    <a href="https://t.me/Razer312Support"> Support Chat </a> 
-</p>
-    
-# RΛZΞR Bot
-#### RΛZΞR is a Telegram group managment bot made using Telethon and Pyrogram which makes it modern and faster than most of the exisitng Telegram Chat Managers.
+<div align="center">
 
-#### RΛZΞR's features over other bots:
-- Modern
-- Fast
-- Fully open-source
-- Frequently updated
-- Multi Language Support [Soon]
-- Advanced Federation System With Buttons
-- Advanced Api
-- Smart Ai System
-- Easy To Use
+<!-- ============================== BANNER ============================== -->
 
-Can be found on Telegram as [@Razer312bot](https://t.me/Razer312Bot)
+<img src="https://capsule-render.vercel.app/api?type=soft&color=0:000000,40:00331A,80:001100,100:000000&height=180&section=header&text=RazerBot&fontSize=48&fontColor=00FF88&fontAlignY=38&animation=fadeIn" width="100%"/>
 
-## Deployment
-First Step!
+<!-- ============================== TYPING SVG ============================== -->
 
-Star ⭐ the repository!!
-It really motivates me to continue this project further
+<br/>
 
-> Click on buttons to expand!
-<details>
-<summary><b>Requirements</b></summary>
-<br>
-    
-- [Python 3.9 - 3.12](https://www.python.org/downloads/)
-- [Telegram API Key](https://docs.pyrogram.org/intro/setup#api-keys)
-- [Telegram Bot Token](https://t.me/botfather)
-- [MongoDB URI](https://telegra.ph/How-To-get-Mongodb-URI-04-06)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Orbitron&weight=500&size=22&duration=3500&pause=800&color=00FF88&center=true&vCenter=true&multiline=true&repeat=true&random=false&width=700&height=80&lines=%3E%20Welcome%20to%20RazerBot%20%F0%9F%9A%80;%3E%20Built%20using%20Python%20%7C%20Optimized%20%26%20Secure;%3E%20Cyberpunk%20Premium%20Theme%20Applied.)](https://github.com/VarshuAi/RazerBot)
 
-</details>
+<br/>
 
-<details>
-<summary><b>Deploy to Render (Free with Keep-Alive)</b></summary>
-<br>
+![Version](https://img.shields.io/badge/Version-1.0-00FF88?style=for-the-badge&logo=github&logoColor=black)
+![Language](https://img.shields.io/badge/Python-Tech-00CC66?style=for-the-badge&logo=python&logoColor=black)
+![Status](https://img.shields.io/badge/Status-Active-14354C?style=for-the-badge&logo=git&logoColor=white)
 
-Render offers a free tier for Web Services (no credit card required):
-1. Sign up on [Render](https://render.com/).
-2. Click **New +** and select **Web Service**.
-3. Connect your GitHub repository.
-4. Set **Runtime** to `Python 3`.
-5. Set **Start Command** to:
-   ```console
-   python3 -m Razerbot
-   ```
-6. Under **Advanced**, add the following environment variables:
-   * `API_ID` — Your Telegram API ID (integer)
-   * `API_HASH` — Your Telegram API HASH (string)
-   * `TOKEN` — Your Telegram Bot Token from @BotFather
-   * `OWNER_ID` — Your Telegram ID (integer, Owner)
-   * `OWNER_USERNAME` — Your Telegram Username (without @)
-   * `MONGO_DB_URI` — Your MongoDB Connection String
-7. Click **Create Web Service**.
-8. **Keep Awake Setup**: Render free tier web services sleep after 15 minutes of inactivity. To keep your bot running 24/7, set up a free HTTP monitor on [UptimeRobot](https://uptimerobot.com/) or [cron-job.org](https://cron-job.org/) to ping your Render service URL (e.g., `https://razerbot-xxxx.onrender.com/`) every 5-10 minutes.
-</details>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,40:00331A,80:001100,100:000000&height=60&section=header&text=&fontSize=0" width="100%"/>
 
-<details>
-<summary><b>Deploy to Hugging Face Spaces (Free - 24/7)</b></summary>
-<br>
+</div>
 
-Hugging Face Spaces provides free 24/7 containers:
-1. Create an account on [Hugging Face](https://huggingface.co/).
-2. Click on your profile and select **New Space**.
-3. Set Space SDK to **Docker** and select the **Blank** template.
-4. Clone the space repository locally, or upload the files directly.
-5. In Space settings, go to **Variables and Secrets** and add your environment variables (`TOKEN`, `API_ID`, `API_HASH`, `OWNER_ID`, `OWNER_USERNAME`, `MONGO_DB_URI`).
-6. Push/commit the files. The Space will build the Docker container and start your bot 24/7 for free!
-</details>
+<!-- ============================== ABOUT ============================== -->
 
-<details>
-<summary><b>Deploy to Railway (Paid)</b></summary>
-<br>
+<h2>
+<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30">
+<samp>&nbsp;ABOUT</samp>
+</h2>
 
-To host RazerBot on Railway:
-1. Click **New Project** on Railway.
-2. Select **Deploy from GitHub repo** and choose this repository.
-3. In your project settings, add a **PostgreSQL** database service (Railway automatically links the `DATABASE_URL` environment variable).
-4. Go to the **Variables** tab of your bot service and add the following Environment Variables:
-   * `API_ID` — Your Telegram API ID (integer)
-   * `API_HASH` — Your Telegram API HASH (string)
-   * `TOKEN` — Your Telegram Bot Token from @BotFather
-   * `OWNER_ID` — Your Telegram ID (integer, Owner)
-   * `OWNER_USERNAME` — Your Telegram Username (without @)
-   * `MONGO_DB_URI` — Your MongoDB Connection String
-5. Click **Deploy**. The bot will build and start polling automatically.
-</details>
-
-<details>
-<summary><b>Deploy to VPS</b></summary>
-<br>
-
-
-```console
-$ git clone https://github.com/LinuxGuy312/RazerBot.git
-$ cd RazerBot
-$ pip3 install -U -r requirements.txt
-$ cp xconfig.py config.py
+```yaml
+name: RazerBot
+version: 1.0
+type: Repository
+author: VarshuAi
+description: >
+  No description available for this project.
+primary_tech: Python
 ```
-> Edit config.py with your values and then start bot with
-```console
-$ python3 -m Razerbot
+
+<!-- ============================== CENTRAL GRAPHIC ============================== -->
+
+<div align="center">
+<br>
+[![Repo Stats](https://github-readme-stats.vercel.app/api/pin/?username=VarshuAi&repo=RazerBot&theme=dark&bg_color=000000&title_color=00FF88&icon_color=00FF88&text_color=00CC66)](https://github.com/VarshuAi/RazerBot)
+<br>
+</div>
+
+<!-- ============================== FEATURES ============================== -->
+
+<h2>
+<img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="28">
+<samp>&nbsp;FEATURES</samp>
+</h2>
+
+- ⚡ **Optimized Operations** — Engineered for performance and stability.
+- 🎨 **Sleek Interface & Theme** — Built using VarshuAi standard aesthetics.
+- 🔒 **Zero-Dependency Core** — Minimal setup complexity.
+
+<!-- ============================== COMMANDS ============================== -->
+
+<h2>
+<img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="28">
+<samp>&nbsp;COMMANDS & USAGE</samp>
+</h2>
+
+```bash
+# Setup virtual environment & run
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+pip install -r requirements.txt
+python main.py
 ```
-</details>
 
-## Contact & Support
+<!-- ============================== TECH STACK ============================== -->
 
-- [Telegram Channel](https://t.me/Razer312Updates)
-- [Telegram Support Group](https://t.me/Razer312Support)
-- [Contact Owner](https://t.me/Razer_312) | [Second Account](https://t.me/WH0907)
+<h2>
+<img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="28">
+<samp>&nbsp;TECH STACK</samp>
+</h2>
 
-## License
+<div align="center">
 
-Distributed under the [GNU General Public License v3.0 License.](https://github.com/LinuxGuy312/RazerBot/blob/main/LICENSE) See `LICENSE.md` for more information.
+#### `>> SYSTEM INVENTORY`
+![Python](https://img.shields.io/badge/Python-Primary_Language-00FF88?style=for-the-badge&logoColor=black)
+![Git](https://img.shields.io/badge/Git-VCS-00CC66?style=for-the-badge&logo=git&logoColor=white)
 
-## Acknowledgements
+</div>
 
-Special thanks to these amazing projects/people which/who help power RΛZΞR Bot:
+<!-- ============================== SETUP ============================== -->
 
-- [R Λ Z Ξ R](https://t.me/Razer_312)
-- [𝔼𝕣𝕖𝕟](https://t.me/WH0907)
+<h2>
+<img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="28">
+<samp>&nbsp;SETUP</samp>
+</h2>
+
+```bash
+# 1. Clone repository remote
+git clone https://github.com/VarshuAi/RazerBot.git
+cd RazerBot
+
+# 2. Check technical prerequsites
+# Ensure runtime matches requirements (Python)
+```
+
+<!-- ============================== STRUCTURE ============================== -->
+
+<h2>
+<samp>&nbsp;📁 STRUCTURE</samp>
+</h2>
+
+```
+RazerBot/
+├── src/             # Source code entrypoints
+├── docs/            # Project documentation files
+├── README.md        # Interactive readme sheet
+└── LICENSE          # Permission details
+```
+
+<!-- ============================== FOOTER ============================== -->
+
+<div align="center">
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=soft&color=0:000000,40:00331A,80:001100,100:000000&height=80&section=footer&text=&fontSize=0" width="100%"/>
+
+<br/>
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Orbitron&size=14&duration=4000&pause=1000&color=00FF88&center=true&vCenter=true&width=500&lines=Made+with+%E2%9D%A4%EF%B8%8F+by+VarshuAi;Build+Fast.+Ship+Secure.+Scale+Infinite.)](https://github.com/VarshuAi)
+
+<br/>
+
+[![GitHub](https://img.shields.io/badge/VarshuAi-Profile-00FF88?style=for-the-badge&logo=github&logoColor=black)](https://github.com/VarshuAi)
+[![Repo](https://img.shields.io/badge/RazerBot-Repo-00CC66?style=for-the-badge&logo=github&logoColor=black)](https://github.com/VarshuAi/RazerBot)
+
+<br/>
+
+</div>
