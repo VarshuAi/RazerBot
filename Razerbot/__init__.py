@@ -1,5 +1,10 @@
+import asyncio
 import logging
 import os
+try:
+    asyncio.get_event_loop()
+except RuntimeError:
+    asyncio.set_event_loop(asyncio.new_event_loop())
 import sys
 import time
 import spamwatch
@@ -43,7 +48,25 @@ async def eor(msg: Message, **kwargs):
     spec = getfullargspec(func.__wrapped__).args
     return await func(**{k: v for k, v in kwargs.items() if k in spec})
 
-aiohttpsession = ClientSession()
+class LazyClientSession:
+    def __init__(self):
+        self._session = None
+
+    def __getattr__(self, name):
+        if self._session is None:
+            self._session = ClientSession()
+        return getattr(self._session, name)
+
+    async def __aenter__(self):
+        if self._session is None:
+            self._session = ClientSession()
+        return await self._session.__aenter__()
+
+    async def __aexit__(self, exc_type, exc_val, exc_tb):
+        if self._session is not None:
+            await self._session.__aexit__(exc_type, exc_val, exc_tb)
+
+aiohttpsession = LazyClientSession()
 
     
 from config import Development as Config

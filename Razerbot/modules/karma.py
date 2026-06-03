@@ -15,8 +15,8 @@ from Razerbot.utils.mongo import (
     update_karma,
 )
 
-regex_upvote = r"^((?i)\+|\+\+|\+1|\+69|thx|thanx|thanks|🖤|❣️|💝|💖|💕|❤|💘|cool|good|👍|baby|thankyou|love|pro)(?s).*"
-regex_downvote = r"^(\-|\-\-|\-1|👎|💔|noob|weak|fuck off|nub|gey|kid|shit|mf)(?s).*"
+regex_upvote = r"(?is)^(\+|\+\+|\+1|\+69|thx|thanx|thanks|🖤|❣️|💝|💖|💕|❤|💘|cool|good|👍|baby|thankyou|love|pro).*"
+regex_downvote = r"(?is)^(\-|\-\-|\-1|👎|💔|noob|weak|fuck off|nub|gey|kid|shit|mf).*"
 
 karma_positive_group = 3
 karma_negative_group = 4

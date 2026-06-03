@@ -38,7 +38,6 @@ pyrate-limiter
 cachetools
 ujson
 pretty_errors
-TgCrypto
 PyroGram
 youtube-dl
 youtube_search
@@ -61,14 +60,12 @@ tswift
 redis
 aiofiles
 pyromod
-TgCrypto
 googletrans==4.0.0-rc1
 google-trans-new==1.1.9
 gpytranslate
 PyYAML>5.0
 envparse
 cloudscraper
-pykeyboard
 youtube-search
 youtube-search-python
 opencv-python-headless

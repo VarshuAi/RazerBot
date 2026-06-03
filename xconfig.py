@@ -16,7 +16,7 @@ class Config(object):
     BOT_USERNAME = "BOT_USERNAME"
     BOT_NAME = ""
     BOT_ID = ""
-    OWNER_ID = Your_Id  # If you dont know, run the bot and do /id in your private chat with it, also an integer
+    OWNER_ID = 0  # If you dont know, run the bot and do /id in your private chat with it, also an integer
     OWNER_USERNAME = "YourUsername"
     START_IMG = "https://graph.org/file/644fddccf30ac191fc895.jpg"
     ALIVE_IMG = "https://graph.org/file/36c17c0f22aeea9c99895.jpg"

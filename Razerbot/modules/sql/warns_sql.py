@@ -1,8 +1,7 @@
 import threading
 
 from Razerbot.modules.sql import BASE, SESSION
-from sqlalchemy import Boolean, Column, BigInteger, String, UnicodeText, distinct, func
-from sqlalchemy.dialects import postgresql
+from sqlalchemy import Boolean, Column, BigInteger, String, UnicodeText, distinct, func, JSON
 
 class Warns(BASE):
     __tablename__ = "warns"
@@ -10,7 +9,7 @@ class Warns(BASE):
     user_id = Column(BigInteger, primary_key=True)
     chat_id = Column(String(14), primary_key=True)
     num_warns = Column(BigInteger, default=0)
-    reasons = Column(postgresql.ARRAY(UnicodeText))
+    reasons = Column(JSON)
 
     def __init__(self, user_id, chat_id):
         self.user_id = user_id

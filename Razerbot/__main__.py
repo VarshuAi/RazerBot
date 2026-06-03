@@ -94,7 +94,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="ɪɴꜰᴏ", callback_data="about_"),
-        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url=f"https://t.me/{OWNER_USERNAME}"),
     ],
    [
         InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url=f"tg://resolve?domain={UPDATE_CHANNEL}"),
@@ -235,7 +235,7 @@ def start(update: Update, context: CallbackContext):
                     sql.num_chats()),
                 reply_markup=InlineKeyboardMarkup(
                  [
-                  [InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url=f"tg://user?id={OWNER_ID}"), 
+                  [InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url=f"https://t.me/{OWNER_USERNAME}"), 
                    InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url=f"tg://resolve?domain={SUPPORT_CHAT}")]
                  ]
               ),
@@ -596,10 +596,10 @@ def razer_callback_query(update: Update, context: CallbackContext):
                      InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="razer_about"),
                      InlineKeyboardButton(text="sᴏᴜʀᴄᴇ", callback_data="source_"),
                  ],
-                 [  
-                    InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", callback_data="razer_support"),
-                    InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url=f"tg://user?id={OWNER_ID}"),
-                 ],
+                  [  
+                     InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", callback_data="razer_support"),
+                     InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url=f"https://t.me/{OWNER_USERNAME}"),
+                  ],
                  [
                      InlineKeyboardButton(text="ᴛᴇʀᴍs ᴀɴᴅ ᴄᴏɴᴅɪᴛɪᴏɴs", callback_data="razer_term"),
                  ],

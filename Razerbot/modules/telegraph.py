@@ -13,8 +13,12 @@ from telegraph import Telegraph, upload_file, exceptions
 
 razer = "Razerbot"
 telegraph = Telegraph()
-data = telegraph.create_account(short_name=razer)
-auth_url = data["auth_url"]
+try:
+    data = telegraph.create_account(short_name=razer)
+    auth_url = data["auth_url"]
+except Exception as e:
+    print(f"[RazerBot] Failed to create telegraph account: {e}")
+    auth_url = None
 
 
 @register(pattern="^[!/.]tg(m|t) ?(.*)")
